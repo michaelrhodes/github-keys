@@ -21,7 +21,7 @@ function keys (user) {
   else {
     stream.push(
       hyperquest({
-        uri: url.replace(/{user}/, user),
+        uri: url.replace(/{user}/g, user),
         withCredentials: false
       }),
       split(),
