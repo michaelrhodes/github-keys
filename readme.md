@@ -1,5 +1,5 @@
 # github-keys
-github-keys is a simple module that finds the public keys of a given github user. Its code is based on a private function in [substack/cipherhub](https://github.com/substack/cipherhub/blob/1.0.1/bin/cmd.js#L185-L201), however github-keys maintains a streaming API and doesn’t filter the returned keys.
+github-keys is a simple module that finds the public keys of a given github user. Its code is based on a private function in [substack/cipherhub](https://github.com/substack/cipherhub/blob/0f18084aa45b32be85e8bd73aa5457f534a73522/bin/cmd.js#L185-L201), however github-keys maintains a streaming API and doesn’t filter the returned keys.
 
 ## Install
 ``` sh
