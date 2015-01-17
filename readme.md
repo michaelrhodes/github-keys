@@ -5,7 +5,7 @@ github-keys is a simple module that finds the public keys of a given Github user
 
 ## Install
 ``` sh
-$ npm install [-g] michaelrhodes/github-keys
+$ npm install [-g] github-keys
 ```
 
 ### Usage
