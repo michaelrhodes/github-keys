@@ -14,12 +14,25 @@
     "through2-filter": "~1.4.0",
     "through2-map": "~1.4.0"
   },
-  "scripts": {
-    "test": "tape test.js"
+  "devDependencies": {
+    "beefy": "^2.1.1",
+    "envify": "^3.2.0",
+    "tape": "^3.2.0"
   },
+  "scripts": {
+    "test": "tape test/*.js",
+    "example": "node example/index",
+    "example-browser": "PROXY='http://cors.maxogden.com/' beefy example/index -- -t envify",
+    "example-all": "node example/all",
+    "example-all-browser": "PROXY='http://cors.maxogden.com/' beefy example/all -- -t envify"
+  },
+  "homepage": "https://github.com/michaelrhodes/github-keys",
   "repository": {
     "type": "git",
     "url": "git@github.com:michaelrhodes/github-keys.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michaelrhodes/github-keys/issues"
   },
   "keywords": [
     "github",
@@ -28,9 +41,5 @@
     "keys"
   ],
   "author": "Michael Rhodes",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/michaelrhodes/github-keys/issues"
-  },
-  "homepage": "https://github.com/michaelrhodes/github-keys"
+  "license": "MIT"
 }

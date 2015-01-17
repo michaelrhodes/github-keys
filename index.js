@@ -4,6 +4,10 @@ var split = require('split2')
 var map = require('through2-map')
 var url = 'https://github.com/{user}.keys'
 
+if (process.env.CORS_PROXY) {
+  url = process.env.CORS_PROXY + url
+}
+
 function keys (user) {
   var stream = splice([])
 
@@ -16,7 +20,10 @@ function keys (user) {
   }
   else {
     stream.push(
-      hyperquest(url.replace(/{user}/, user)),
+      hyperquest({
+        uri: url.replace(/{user}/, user),
+        withCredentials: false
+      }),
       split(),
       map(trim)
     )
