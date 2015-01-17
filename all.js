@@ -6,6 +6,11 @@ module.exports = function (user, cb) {
     cb = user
     user = ''
   }
+  if (typeof cb !== 'function') {
+    throw new Error(
+      'No callback specified'
+    )
+  }
  
   var all = []
   keys(user).on('error', cb).pipe(through(
