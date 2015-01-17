@@ -34,13 +34,6 @@ keys('alice', function (err, array) {
 })
 ```
 
-#### command-line
-If you install github-keys with the `-g` flag, you can access the command-line version:
-
-```sh
-$ github-keys {username}
-```
-
 ##### Running the usage examples
 To run either of these examples in node or the browser, use the following commands:
 
@@ -59,6 +52,15 @@ Because Github doesn’t support [CORS](http://enable-cors.org/) for the `/{user
 ```js
 $ CORS_PROXY='http://cors.proxy.com/' browserify -t envify program.js > bundle.js
 ``` 
+
+### Command-line usage
+If you install github-keys with the `-g` flag, you can access the command-line version:
+
+```sh
+$ github-keys {username}
+```
+
+
 
 ### License
 [MIT](http://opensource.org/licenses/MIT)
