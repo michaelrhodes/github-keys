@@ -34,6 +34,13 @@ keys('alice', function (err, array) {
 })
 ```
 
+#### command-line
+If you install github-keys with the `-g` flag, you can access the command-line version:
+
+```sh
+$ github-keys {username}
+```
+
 ##### Running the usage examples
 To run either of these examples in node or the browser, use the following commands:
 
