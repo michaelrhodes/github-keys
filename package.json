@@ -1,6 +1,6 @@
 {
   "name": "github-keys",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "find the public keys of a given github user",
   "main": "index.js",
   "bin": {
